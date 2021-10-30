@@ -1,0 +1,13 @@
+<h2>
+  Halo <%= nama %>
+</h2>
+<h4>Daftar orang</h4>
+
+<% if (orang.length < 1) { %>
+<p>Data mahasiswa kosong</p>
+<% } %> <% orang.forEach(org => { %>
+<ul>
+  <li>Nama : <%= org.nama %></li>
+  <li>Email : <%= org.email %></li>
+</ul>
+<% }) %>
